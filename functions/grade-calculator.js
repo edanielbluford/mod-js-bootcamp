@@ -1,8 +1,8 @@
 //Challenge
 
 //15 to
-let gradeCalc = function(studentScore, totalScore) {
-  let gradePercentage = (studentScore / totalScore) * 100;
+const gradeCalc = function(studentScore, totalScore) {
+  const gradePercentage = (studentScore / totalScore) * 100;
   let letterGrade;
 
   if (gradePercentage >= 90 && gradePercentage <= 100) {
@@ -17,11 +17,11 @@ let gradeCalc = function(studentScore, totalScore) {
     letterGrade = "F";
   }
 
-  let gradeMessage = `You got an ${letterGrade}(${gradePercentage}%)`;
+  const gradeMessage = `You got an ${letterGrade}(${gradePercentage}%)`;
 
   return gradeMessage;
 };
 
-let gradePrint = gradeCalc(15, 20);
+const gradePrint = gradeCalc(15, 20);
 
 console.log(gradePrint);
