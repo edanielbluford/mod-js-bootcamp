@@ -30,3 +30,21 @@ console.log(howMany());
 todos.forEach(function(item, index) {
   console.log(`${index + 1}. ${item}`);
 });
+
+///Wall Street
+let moneyGenerator = function(investmentTips, num) {
+  for (let count = 0; count < num; count++) {
+    investmentTips(num);
+  }
+};
+
+////////Investment Strat
+let Agressive = function(num) {
+  if (num > 20) {
+    num * num;
+  } else {
+    num--;
+  }
+};
+
+moneyGenerator(Agressive(), 5);
