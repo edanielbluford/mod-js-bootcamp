@@ -1,50 +1,39 @@
 const todos = [
-  "Get Milk",
-  "Get OJ",
-  "Brush Cat",
-  "Fill out Form",
-  "Play Destiny"
-];
+{
+  text:"Get Milk",
+  Completed: false
+},
+{
+  text:"Get OJ",
+  Completed: true
+},
+{
+  text:"Brush Cat",
+  Completed: false
+},
+{
+  text:"Play Destiny",
+  Completed: true
+}];
 
-let remove = function(num) {
-  todos.splice(num, 1);
-};
+//1. convert array to array objects => Text, completed
 
-let howMany = function() {
-  return `You have ${todos.length} todos today!`;
-};
+//2. function that removes todo by text value
+const deleteTodo = function(todos,todoText){
+      return todos.find(function (todo,index){
+        return todo.text.toLower() === todoText.toLower()
+    
+  })
 
-const pickToDo = function(num) {
-  return `Todo: ${todos[num]}`;
-};
-console.log(howMany());
-//Delete third item.
-remove(2);
-//Add new item
-todos.push("New Todo");
-//remove first item from list
-todos.shift();
+}
 
-console.log(howMany());
-//Callback function
-todos.forEach(function(item, index) {
-  console.log(`${index + 1}. ${item}`);
-});
+const findTodo = function (todos, todoTitle){
+  return todos.find(function (todo,index){
+  return todo.title.toLowerCase() === todoTitle.toLowerCase();
+})
 
-///Wall Street
-let moneyGenerator = function(investmentTips, num) {
-  for (let count = 0; count < num; count++) {
-    investmentTips(num);
-  }
-};
+}
 
-////////Investment Strat
-let Agressive = function(num) {
-  if (num > 20) {
-    num * num;
-  } else {
-    num--;
-  }
-};
 
-moneyGenerator(Agressive(), 5);
+findTodo(todos,"Brush Cat")
+console.log(todos)
