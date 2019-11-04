@@ -11,11 +11,7 @@
             "name": "Launch Program",
             "program": "${file}"
         }
-        {
-            "type": "firefox",
-            "request": "launch",
-            
-        }
+      
         
 
 

@@ -20,20 +20,24 @@ const todos = [
 
 //2. function that removes todo by text value
 const deleteTodo = function(todos,todoText){
-      return todos.find(function (todo,index){
-        return todo.text.toLower() === todoText.toLower()
+     const index = todos.findIndex(function (todo){
+        return todo.text.toLowerCase() === todoText.toLowerCase()
+     
     
   })
+  if(index > -1){
+    todos.splice(index, 1)
+  }
 
 }
 
 const findTodo = function (todos, todoTitle){
   return todos.find(function (todo,index){
   return todo.title.toLowerCase() === todoTitle.toLowerCase();
-})
+ })
 
-}
+ }
 
 
-findTodo(todos,"Brush Cat")
+deleteTodo(todos,"Brush Cat")
 console.log(todos)
