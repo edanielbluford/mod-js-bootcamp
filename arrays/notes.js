@@ -12,32 +12,21 @@ const notes = [
     body: "Clothes"
   }
 ];
-//console.log(notes);
-//notes.pop();
+const findNote = function (notes, noteTitle){
+  return notes.find(function (note,index){
+  return note.title.toLowerCase() === noteTitle.toLowerCase();
+})
 
-//notes.push("My new note");
+}
 
-//console.log(notes);
+const note = findNote(notes,"Stuff to work on")
+console.log(note)
 
-//let removedNote = notes.pop();
+// console.log(notes.length);
+// console.log(notes);
 
-//console.log(notes.length);
-//console.log(notes[0]);
-//console.log(notes[notes.length - 1]);
+// const index = notes.findIndex(function(note, index) {
+//   return note.title === "Things to buy";
+// });
 
-//notes.shift();
-//notes.unshift("My First Note");
-
-//notes.splice(1);
-
-//?Counting 1
-//console.log("break");
-
-console.log(notes.length);
-console.log(notes);
-
-const index = notes.findIndex(function(note, index) {
-  return note.title === "Things to buy";
-});
-
-console.log(index);
+// console.log(index);
