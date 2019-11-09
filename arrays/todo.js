@@ -32,19 +32,19 @@ todos.forEach(function(item, index) {
 });
 
 ///Wall Street
-let moneyGenerator = function(investmentTips, num) {
-  for (let count = 0; count < num; count++) {
-    investmentTips(num);
-  }
-};
+// let moneyGenerator = function(investmentTips, num) {
+//   for (let count = 0; count < num; count++) {
+//     investmentTips(num);
+//   }
+// };
 
-////////Investment Strat
-let Agressive = function(num) {
-  if (num > 20) {
-    num * num;
-  } else {
-    num--;
-  }
-};
+// ////////Investment Strat
+// let Agressive = function(num) {
+//   if (num > 20) {
+//     num * num;
+//   } else {
+//     num--;
+//   }
+// };
 
-moneyGenerator(Agressive(), 5);
+//moneyGenerator(Agressive(), 5);
