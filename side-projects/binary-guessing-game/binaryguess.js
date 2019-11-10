@@ -5,22 +5,24 @@ let target
 
 
 const binarySearchGuess = function(array,targetValue){
-    var min = 0;
-	var n = array.length;
-	var max = n - 1;
+    let min = 0;
+	let n = array.length;
+	let max = n - 1;
     
-    var guess;
+    let guess;
 
-    
+    let guessCount = 0
 
     while(max >= min){
         
+        guessCount++
        guess = Math.floor((max+min)/2);
         if(array[guess]===targetValue)
         {   return guess;
             
         }else if(array[guess] < targetValue){
             min = guess +1;
+            console.log(guess)
         }else{
             max = guess -1;
         }
