@@ -12,15 +12,19 @@ const notes = [
     body: "Clothes"
   }
 ];
-const findNote = function (notes, noteTitle){
-  return notes.find(function (note,index){
-  return note.title.toLowerCase() === noteTitle.toLowerCase();
-})
+const findNote = function(notes, noteTitle) {
+  return notes.find(function(note, index) {
+    return note.title.toLowerCase() === noteTitle.toLowerCase();
+  });
+};
 
-}
+const filtered = notes.filter(function(note, index) {
+  return note.text;
+});
 
-const note = findNote(notes,"Stuff to work on")
-console.log(note)
+console.log(filteredNotes);
+const note = findNote(notes, "Stuff to work on");
+console.log(note);
 
 // console.log(notes.length);
 // console.log(notes);
