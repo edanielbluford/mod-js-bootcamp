@@ -14,3 +14,4 @@ function angryProfessor(classThreshold, studentArrvals) {
 }
 
 console.log(angryProfessor(5, [-1, -1, 0, 0, 1, 1]));
+cwr - cle - cyber - pt - 01 - 2020 - m - w;
