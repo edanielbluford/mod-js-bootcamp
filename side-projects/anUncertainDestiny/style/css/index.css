@@ -1,0 +1,15 @@
+@import url("./navbar.css");
+@import url("./title.css");
+@import url("./footer.css");
+
+html {
+ font-family: "abbess", sans-serif;
+}
+* {
+ box-sizing: border-box;
+}
+.container {
+ height: 90%;
+ width: 90%;
+ margin: 2rem auto;
+}
