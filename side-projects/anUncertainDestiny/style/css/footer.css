@@ -1,3 +1,29 @@
-#copyright{
-    content:'/f1f9'
+footer {
+ display: flex;
+ position: absolute;
+ bottom: 0;
+ width: inherit;
+ align-items: center;
+ justify-content: center;
+ height: 2.5rem;
+}
+
+.signature {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ letter-spacing: 0.1em;
+}
+.signature p {
+ padding-left: 0.2em;
+}
+.signature :nth-child(2) {
+ color: blue;
+ padding-right: 0.4em;
+ padding-left: 0;
+}
+.signature :nth-child(1) {
+ padding-right: 0;
 }

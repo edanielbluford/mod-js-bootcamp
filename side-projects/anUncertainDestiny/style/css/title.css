@@ -5,7 +5,10 @@
  flex-direction: row;
  flex-wrap: wrap;
 }
-
+header {
+ position: absolute;
+ top: 0;
+}
 @media screen and (max-width: 600px) {
  .gametitle :nth-child(1) {
   margin-top: 2rem;
